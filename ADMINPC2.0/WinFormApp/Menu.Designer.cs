@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.isla1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +50,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.isla1ToolStripMenuItem,
             this.isla2ToolStripMenuItem,
@@ -89,7 +91,7 @@
             // reportarToolStripMenuItem1
             // 
             this.reportarToolStripMenuItem1.Name = "reportarToolStripMenuItem1";
-            this.reportarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.reportarToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.reportarToolStripMenuItem1.Text = "Reportar";
             this.reportarToolStripMenuItem1.Click += new System.EventHandler(this.reportarToolStripMenuItem1_Click);
             // 
@@ -104,7 +106,7 @@
             // reportarToolStripMenuItem2
             // 
             this.reportarToolStripMenuItem2.Name = "reportarToolStripMenuItem2";
-            this.reportarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.reportarToolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
             this.reportarToolStripMenuItem2.Text = "Reportar";
             this.reportarToolStripMenuItem2.Click += new System.EventHandler(this.reportarToolStripMenuItem2_Click);
             // 
@@ -119,7 +121,7 @@
             // reportarToolStripMenuItem3
             // 
             this.reportarToolStripMenuItem3.Name = "reportarToolStripMenuItem3";
-            this.reportarToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.reportarToolStripMenuItem3.Size = new System.Drawing.Size(119, 22);
             this.reportarToolStripMenuItem3.Text = "Reportar";
             this.reportarToolStripMenuItem3.Click += new System.EventHandler(this.reportarToolStripMenuItem3_Click);
             // 
@@ -134,7 +136,7 @@
             // reportarToolStripMenuItem4
             // 
             this.reportarToolStripMenuItem4.Name = "reportarToolStripMenuItem4";
-            this.reportarToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.reportarToolStripMenuItem4.Size = new System.Drawing.Size(119, 22);
             this.reportarToolStripMenuItem4.Text = "Reportar";
             this.reportarToolStripMenuItem4.Click += new System.EventHandler(this.reportarToolStripMenuItem4_Click);
             // 
@@ -149,7 +151,7 @@
             // reportarToolStripMenuItem5
             // 
             this.reportarToolStripMenuItem5.Name = "reportarToolStripMenuItem5";
-            this.reportarToolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.reportarToolStripMenuItem5.Size = new System.Drawing.Size(119, 22);
             this.reportarToolStripMenuItem5.Text = "Reportar";
             this.reportarToolStripMenuItem5.Click += new System.EventHandler(this.reportarToolStripMenuItem5_Click);
             // 
@@ -163,6 +165,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 64);
             this.label1.Name = "label1";
@@ -173,11 +176,11 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.White;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.White;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(649, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(12, 277);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(37, 18);
             this.linkLabel1.TabIndex = 2;
@@ -189,6 +192,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(686, 304);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);

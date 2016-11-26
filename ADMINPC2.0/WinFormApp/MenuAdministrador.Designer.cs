@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdministrador));
             this.label1 = new System.Windows.Forms.Label();
             this.linkIslas = new System.Windows.Forms.LinkLabel();
             this.linkLaboratorio = new System.Windows.Forms.LinkLabel();
@@ -37,6 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
@@ -47,6 +49,7 @@
             // linkIslas
             // 
             this.linkIslas.AutoSize = true;
+            this.linkIslas.BackColor = System.Drawing.Color.Transparent;
             this.linkIslas.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkIslas.LinkColor = System.Drawing.Color.Black;
             this.linkIslas.Location = new System.Drawing.Point(16, 67);
@@ -60,6 +63,7 @@
             // linkLaboratorio
             // 
             this.linkLaboratorio.AutoSize = true;
+            this.linkLaboratorio.BackColor = System.Drawing.Color.Transparent;
             this.linkLaboratorio.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLaboratorio.LinkColor = System.Drawing.Color.Black;
             this.linkLaboratorio.Location = new System.Drawing.Point(16, 123);
@@ -73,8 +77,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(529, 171);
+            this.linkLabel1.Location = new System.Drawing.Point(17, 171);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(27, 13);
             this.linkLabel1.TabIndex = 3;
@@ -86,7 +91,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 193);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(606, 214);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkLaboratorio);
             this.Controls.Add(this.linkIslas);
