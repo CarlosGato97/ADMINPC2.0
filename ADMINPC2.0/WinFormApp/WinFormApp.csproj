@@ -75,6 +75,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ADMINPCDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ADMINPCDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMINPCDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Isla1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +291,17 @@
     </None>
     <None Include="ADMINPCDataSet5.xss">
       <DependentUpon>ADMINPCDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet6.xsc">
+      <DependentUpon>ADMINPCDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ADMINPCDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ADMINPCDataSet6.xss">
+      <DependentUpon>ADMINPCDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

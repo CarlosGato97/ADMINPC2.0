@@ -19,8 +19,9 @@ namespace WinFormApp
 
         private void ReporteAula_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'aDMINPCDataSet1.ReporteAula' table. You can move, or remove it, as needed.
-            this.reporteAulaTableAdapter.Fill(this.aDMINPCDataSet1.ReporteAula);
+            // TODO: This line of code loads data into the 'aDMINPCDataSet6.ReporteAula' table. You can move, or remove it, as needed.
+            this.reporteAulaTableAdapter.Fill(this.aDMINPCDataSet6.ReporteAula);
+
 
         }
 
