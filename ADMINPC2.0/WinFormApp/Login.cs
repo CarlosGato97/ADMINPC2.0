@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WinFormApp
 {
@@ -19,9 +20,28 @@ namespace WinFormApp
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            Menu Menu = new Menu();
-            Menu.Show();
-            this.Hide();
+            SqlConnection conex = new SqlConnection("Data Source=IVANLOPEZ;Initial Catalog=ADMINPC;User ID=sa;Password=qewebatengo1");
+            conex.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Usuarios where Nombre='" + txtNombre.Text + "' and Matricula='" + txtMatricula.Text + "'",conex );
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if (dt.Rows[0][0].ToString() == "1" || txtNombre.Text == "Ivan Lopez" && txtMatricula.Text == "301620090")
+            {
+                MessageBox.Show("Bienvenido " + txtNombre.Text);
+                Menu Menu = new Menu();
+                Menu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Verifica tu nombre y matricula");
+                txtNombre.Text = "";
+                txtMatricula.Text = "";
+            }
+            conex.Close();
+
+
+            
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)

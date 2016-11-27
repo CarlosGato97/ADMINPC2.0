@@ -36,6 +36,8 @@
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtRFC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +87,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(216, 185);
+            this.btnRegistrar.Location = new System.Drawing.Point(216, 224);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
             this.btnRegistrar.TabIndex = 5;
@@ -95,13 +97,30 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(87, 185);
+            this.btnVolver.Location = new System.Drawing.Point(87, 224);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 6;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(46, 174);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "RFC:";
+            // 
+            // txtRFC
+            // 
+            this.txtRFC.Location = new System.Drawing.Point(87, 167);
+            this.txtRFC.Name = "txtRFC";
+            this.txtRFC.Size = new System.Drawing.Size(204, 20);
+            this.txtRFC.TabIndex = 8;
             // 
             // Registrar
             // 
@@ -110,6 +129,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(328, 271);
+            this.Controls.Add(this.txtRFC);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtMatricula);
@@ -132,5 +153,7 @@
         private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtRFC;
     }
 }
