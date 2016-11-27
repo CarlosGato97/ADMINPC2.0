@@ -19,7 +19,7 @@ namespace WinFormApp
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Login Menu = new Login();
+            LoginAdmin Menu = new LoginAdmin();
             Menu.Show();
             this.Hide();
         }

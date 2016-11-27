@@ -55,5 +55,12 @@ namespace WinFormApp
         {
             this.Close();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoginAdmin Registra = new LoginAdmin();
+            Registra.Show();
+            this.Hide();
+        }
     }
 }

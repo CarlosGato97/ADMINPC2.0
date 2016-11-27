@@ -19,3 +19,5 @@ C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.csproj.GenerateResource.Cache
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.exe
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.pdb
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.LoginAdmin.resources
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.RegistrarAdmin.resources

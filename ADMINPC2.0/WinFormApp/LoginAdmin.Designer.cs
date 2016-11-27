@@ -1,6 +1,6 @@
 ﻿namespace WinFormApp
 {
-    partial class Login
+    partial class LoginAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginAdmin));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtMatricula = new System.Windows.Forms.TextBox();
+            this.txtRFC = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.LinkSalir = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -48,121 +46,96 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 42);
+            this.label1.Size = new System.Drawing.Size(175, 42);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Admin";
+            this.label1.Text = "AdminPC";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(78, 51);
+            this.label2.Location = new System.Drawing.Point(126, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 42);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "PC";
+            this.label2.Text = "Nombre:";
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(241, 38);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Usuario:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(235, 80);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Matricula:";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(142, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "RFC:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(294, 31);
+            this.txtNombre.Location = new System.Drawing.Point(179, 76);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(194, 20);
-            this.txtNombre.TabIndex = 5;
+            this.txtNombre.Size = new System.Drawing.Size(221, 20);
+            this.txtNombre.TabIndex = 3;
             // 
-            // txtMatricula
+            // txtRFC
             // 
-            this.txtMatricula.Location = new System.Drawing.Point(294, 73);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(194, 20);
-            this.txtMatricula.TabIndex = 6;
+            this.txtRFC.Location = new System.Drawing.Point(179, 113);
+            this.txtRFC.Name = "txtRFC";
+            this.txtRFC.Size = new System.Drawing.Size(221, 20);
+            this.txtRFC.TabIndex = 4;
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(413, 123);
+            this.btnEntrar.Location = new System.Drawing.Point(325, 166);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
-            this.btnEntrar.TabIndex = 7;
+            this.btnEntrar.TabIndex = 5;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(294, 123);
+            this.btnRegistrar.Location = new System.Drawing.Point(213, 166);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
-            this.btnRegistrar.TabIndex = 8;
+            this.btnRegistrar.TabIndex = 6;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // LinkSalir
-            // 
-            this.LinkSalir.AutoSize = true;
-            this.LinkSalir.BackColor = System.Drawing.Color.Transparent;
-            this.LinkSalir.LinkColor = System.Drawing.Color.Black;
-            this.LinkSalir.Location = new System.Drawing.Point(461, 172);
-            this.LinkSalir.Name = "LinkSalir";
-            this.LinkSalir.Size = new System.Drawing.Size(27, 13);
-            this.LinkSalir.TabIndex = 9;
-            this.LinkSalir.TabStop = true;
-            this.LinkSalir.Text = "Salir";
-            this.LinkSalir.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkSalir_LinkClicked);
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(12, 172);
+            this.linkLabel1.Location = new System.Drawing.Point(12, 188);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(151, 13);
-            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.Size = new System.Drawing.Size(27, 13);
+            this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Click aqui si eres administrador";
+            this.linkLabel1.Text = "Salir";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // Login
+            // LoginAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(517, 203);
+            this.ClientSize = new System.Drawing.Size(433, 219);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.LinkSalir);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnEntrar);
-            this.Controls.Add(this.txtMatricula);
+            this.Controls.Add(this.txtRFC);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Login";
-            this.Text = "Login";
+            this.Name = "LoginAdmin";
+            this.Text = "LoginAdmin";
+            this.Load += new System.EventHandler(this.LoginAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,13 +145,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtMatricula;
+        private System.Windows.Forms.TextBox txtRFC;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.LinkLabel LinkSalir;
         private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
