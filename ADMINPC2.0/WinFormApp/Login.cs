@@ -25,7 +25,7 @@ namespace WinFormApp
             SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Usuarios where Nombre='" + txtNombre.Text + "' and Matricula='" + txtMatricula.Text + "'",conex );
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1" || txtNombre.Text == "Ivan Lopez" && txtMatricula.Text == "301620090")
+            if (dt.Rows[0][0].ToString() == "1" )
             {
                 MessageBox.Show("Bienvenido " + txtNombre.Text);
                 Menu Menu = new Menu();

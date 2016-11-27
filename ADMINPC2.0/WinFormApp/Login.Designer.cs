@@ -38,6 +38,7 @@
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.LinkSalir = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -130,6 +131,18 @@
             this.LinkSalir.Text = "Salir";
             this.LinkSalir.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkSalir_LinkClicked);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(12, 172);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(151, 13);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Click aqui si eres administrador";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,6 +150,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(517, 203);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.LinkSalir);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnEntrar);
@@ -164,5 +178,6 @@
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.LinkLabel LinkSalir;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
