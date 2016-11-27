@@ -55,6 +55,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ADMINPCDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ADMINPCDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMINPCDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINPCDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMINPCDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINPCDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMINPCDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINPCDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMINPCDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Isla1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +242,50 @@
     </None>
     <None Include="ADMINPCDataSet1.xss">
       <DependentUpon>ADMINPCDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet2.xsc">
+      <DependentUpon>ADMINPCDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ADMINPCDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ADMINPCDataSet2.xss">
+      <DependentUpon>ADMINPCDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet3.xsc">
+      <DependentUpon>ADMINPCDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ADMINPCDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ADMINPCDataSet3.xss">
+      <DependentUpon>ADMINPCDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet4.xsc">
+      <DependentUpon>ADMINPCDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ADMINPCDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ADMINPCDataSet4.xss">
+      <DependentUpon>ADMINPCDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet5.xsc">
+      <DependentUpon>ADMINPCDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ADMINPCDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ADMINPCDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ADMINPCDataSet5.xss">
+      <DependentUpon>ADMINPCDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

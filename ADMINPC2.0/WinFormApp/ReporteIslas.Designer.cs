@@ -32,19 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReporteIslas));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnVolverMenuAdmin = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.aDMINPCDataSet5 = new WinFormApp.ADMINPCDataSet5();
+            this.reportIslasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportIslasTableAdapter = new WinFormApp.ADMINPCDataSet5TableAdapters.ReportIslasTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numIslaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reportIslasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aDMINPCDataSet = new WinFormApp.ADMINPCDataSet();
-            this.btnVolverMenuAdmin = new System.Windows.Forms.Button();
-            this.reportIslasTableAdapter = new WinFormApp.ADMINPCDataSetTableAdapters.ReportIslasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportIslasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,6 +68,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Reportes:";
             // 
+            // btnVolverMenuAdmin
+            // 
+            this.btnVolverMenuAdmin.Location = new System.Drawing.Point(541, 290);
+            this.btnVolverMenuAdmin.Name = "btnVolverMenuAdmin";
+            this.btnVolverMenuAdmin.Size = new System.Drawing.Size(75, 23);
+            this.btnVolverMenuAdmin.TabIndex = 3;
+            this.btnVolverMenuAdmin.Text = "Volver";
+            this.btnVolverMenuAdmin.UseVisualStyleBackColor = true;
+            this.btnVolverMenuAdmin.Click += new System.EventHandler(this.btnVolverMenuAdmin_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -79,10 +89,24 @@
             this.horaDataGridViewTextBoxColumn,
             this.descripcionDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.reportIslasBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 80);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 79);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(599, 204);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.Size = new System.Drawing.Size(599, 205);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // aDMINPCDataSet5
+            // 
+            this.aDMINPCDataSet5.DataSetName = "ADMINPCDataSet5";
+            this.aDMINPCDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // reportIslasBindingSource
+            // 
+            this.reportIslasBindingSource.DataMember = "ReportIslas";
+            this.reportIslasBindingSource.DataSource = this.aDMINPCDataSet5;
+            // 
+            // reportIslasTableAdapter
+            // 
+            this.reportIslasTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -114,30 +138,6 @@
             this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             // 
-            // reportIslasBindingSource
-            // 
-            this.reportIslasBindingSource.DataMember = "ReportIslas";
-            this.reportIslasBindingSource.DataSource = this.aDMINPCDataSet;
-            // 
-            // aDMINPCDataSet
-            // 
-            this.aDMINPCDataSet.DataSetName = "ADMINPCDataSet";
-            this.aDMINPCDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // btnVolverMenuAdmin
-            // 
-            this.btnVolverMenuAdmin.Location = new System.Drawing.Point(541, 290);
-            this.btnVolverMenuAdmin.Name = "btnVolverMenuAdmin";
-            this.btnVolverMenuAdmin.Size = new System.Drawing.Size(75, 23);
-            this.btnVolverMenuAdmin.TabIndex = 3;
-            this.btnVolverMenuAdmin.Text = "Volver";
-            this.btnVolverMenuAdmin.UseVisualStyleBackColor = true;
-            this.btnVolverMenuAdmin.Click += new System.EventHandler(this.btnVolverMenuAdmin_Click);
-            // 
-            // reportIslasTableAdapter
-            // 
-            this.reportIslasTableAdapter.ClearBeforeFill = true;
-            // 
             // ReporteIslas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,16 +145,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(628, 322);
-            this.Controls.Add(this.btnVolverMenuAdmin);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnVolverMenuAdmin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ReporteIslas";
             this.Text = "ReporteIslas";
             this.Load += new System.EventHandler(this.ReporteIslas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportIslasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,11 +164,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnVolverMenuAdmin;
-        private ADMINPCDataSet aDMINPCDataSet;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private ADMINPCDataSet5 aDMINPCDataSet5;
         private System.Windows.Forms.BindingSource reportIslasBindingSource;
-        private ADMINPCDataSetTableAdapters.ReportIslasTableAdapter reportIslasTableAdapter;
+        private ADMINPCDataSet5TableAdapters.ReportIslasTableAdapter reportIslasTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numIslaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;

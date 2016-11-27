@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WinFormApp
 {
@@ -31,9 +32,30 @@ namespace WinFormApp
 
         private void btnEnviar3_Click(object sender, EventArgs e)
         {
-            Menu Menu = new Menu();
-            Menu.Show();
-            this.Hide();
+            SqlConnection conex = new SqlConnection("Data Source=IVANLOPEZ;Initial Catalog=ADMINPC;User ID=sa;Password=qewebatengo1");
+            conex.Open();
+
+            string Id3 = txtID3.Text;
+            string NumIsla3 = txtNumIsla3.Text;
+            string Fecha3 = txtFecha3.Text;
+            string Hora3 = txtHora3.Text;
+            string Descripcion3 = txtDescripcion3.Text;
+
+
+            string cade = "insert into ReportIslas (Id, NumIsla, Fecha, Hora, Descripcion) values ('" + Id3 + "','" + NumIsla3 + "','" + Fecha3 + "','" + Hora3 + "','" + Descripcion3 + "')";
+            SqlCommand coman = new SqlCommand(cade, conex);
+            coman.ExecuteNonQuery();
+
+            MessageBox.Show("Mensaje enviado correctamente");
+            txtID3.Text = "";
+            txtNumIsla3.Text = "";
+            txtFecha3.Text = "";
+            txtHora3.Text = "";
+            txtDescripcion3.Text = "";
+
+
+            conex.Close();
+
         }
 
         private void btnVolver3_Click(object sender, EventArgs e)

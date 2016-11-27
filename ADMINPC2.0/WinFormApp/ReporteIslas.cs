@@ -19,8 +19,10 @@ namespace WinFormApp
 
         private void ReporteIslas_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'aDMINPCDataSet.ReportIslas' table. You can move, or remove it, as needed.
-            this.reportIslasTableAdapter.Fill(this.aDMINPCDataSet.ReportIslas);
+            // TODO: This line of code loads data into the 'aDMINPCDataSet5.ReportIslas' table. You can move, or remove it, as needed.
+            this.reportIslasTableAdapter.Fill(this.aDMINPCDataSet5.ReportIslas);
+            
+           
 
         }
 
