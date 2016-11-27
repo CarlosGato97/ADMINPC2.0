@@ -21,9 +21,7 @@ namespace WinFormApp
         {
             // TODO: This line of code loads data into the 'aDMINPCDataSet5.ReportIslas' table. You can move, or remove it, as needed.
             this.reportIslasTableAdapter.Fill(this.aDMINPCDataSet5.ReportIslas);
-            
-           
-
+ 
         }
 
         private void btnVolverMenuAdmin_Click(object sender, EventArgs e)
