@@ -32,11 +32,20 @@ namespace WinFormApp
             SqlCommand coman = new SqlCommand(cade, conex);
             coman.ExecuteNonQuery();
 
-            MessageBox.Show("Reporte enviado correctamente");
-            txtFecha.Text = "";
-            txtHora.Text = "";
-            comboBox1.Text = "";
-            txtDescripcion.Text = "";
+            if ((txtFecha.Text == "") || (txtHora.Text == "") || (comboBox1.Text == "") || (txtDescripcion.Text == ""))
+            {
+                MessageBox.Show("Error, llena el dato que falta");
+            }
+            else
+            {
+                MessageBox.Show("Mensaje enviado correctamente ");
+                txtFecha.Text = "";
+                txtHora.Text = "";
+                comboBox1.Text = "";
+                txtDescripcion.Text = "";
+                
+
+            }
 
 
             conex.Close();

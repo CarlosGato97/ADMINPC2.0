@@ -34,12 +34,20 @@ namespace WinFormApp
             SqlCommand coman = new SqlCommand(cade, conex);
             coman.ExecuteNonQuery();
 
-            MessageBox.Show("Mensaje enviado correctamente");
-            comboBoxID.Text = "";
-            comboBoxNumIsla.Text = "";
-            txtFecha2.Text = "";
-            txtHora2.Text = "";
-            txtDescripcion2.Text = "";
+            if ((comboBoxID.Text == "") || (comboBoxNumIsla.Text == "") || (txtFecha2.Text == "") || (txtHora2.Text == "") || (txtDescripcion2.Text == ""))
+            {
+                MessageBox.Show("Error, llena todos los datos");
+            }
+            else
+            {
+                MessageBox.Show("Mensaje enviado correctamente ");
+                comboBoxID.Text = "";
+                comboBoxNumIsla.Text = "";
+                txtFecha2.Text = "";
+                txtHora2.Text = "";
+                txtDescripcion2.Text = "";
+
+            }
         }
 
         private void btnVolver2_Click(object sender, EventArgs e)

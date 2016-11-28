@@ -39,13 +39,25 @@ namespace WinFormApp
             string cade = "insert into ReportIslas (Id, NumIsla, Fecha, Hora, Descripcion) values ('" + Id + "','" + NumIsla + "','" + Fecha + "','" + Hora + "','" + Descripcion + "')";
             SqlCommand coman = new SqlCommand(cade, conex);
             coman.ExecuteNonQuery();
+            if ((comboBoxID.Text == "") || (ComboBoxNumIsla.Text == "") || (txtFecha.Text == "") || (txtHora.Text == "") || (txtDescripcion.Text == ""))
+            {
+                MessageBox.Show("Error, llena el dato que falta");
+            }
+            else
+            {
+                MessageBox.Show("Mensaje enviado correctamente ");
+                comboBoxID.Text = "";
+                ComboBoxNumIsla.Text = "";
+                txtFecha.Text = "";
+                txtHora.Text = "";
+                txtDescripcion.Text = "";
 
-            MessageBox.Show("Mensaje enviado correctamente");
-            comboBoxID.Text = "";
-            ComboBoxNumIsla.Text = "";
-            txtFecha.Text = "";
-            txtHora.Text = "";
-            txtDescripcion.Text = "";
+            }
+
+
+                
+
+            
 
 
             conex.Close(); 
