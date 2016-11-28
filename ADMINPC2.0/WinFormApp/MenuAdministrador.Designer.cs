@@ -98,7 +98,9 @@
             this.Controls.Add(this.linkLaboratorio);
             this.Controls.Add(this.linkIslas);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuAdministrador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuAdministrador";
             this.ResumeLayout(false);
             this.PerformLayout();

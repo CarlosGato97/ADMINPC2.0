@@ -21,3 +21,7 @@ C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.pdb
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.LoginAdmin.resources
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.RegistrarAdmin.resources
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\bin\Debug\WinFormApp.exe.manifest
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\bin\Debug\WinFormApp.application
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.exe.manifest
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.application

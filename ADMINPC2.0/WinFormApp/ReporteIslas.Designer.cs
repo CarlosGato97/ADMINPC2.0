@@ -34,17 +34,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnVolverMenuAdmin = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.aDMINPCDataSet5 = new WinFormApp.ADMINPCDataSet5();
-            this.reportIslasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reportIslasTableAdapter = new WinFormApp.ADMINPCDataSet5TableAdapters.ReportIslasTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numIslaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reportIslasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aDMINPCDataSet5 = new WinFormApp.ADMINPCDataSet5();
+            this.reportIslasTableAdapter = new WinFormApp.ADMINPCDataSet5TableAdapters.ReportIslasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportIslasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,20 +94,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(599, 205);
             this.dataGridView1.TabIndex = 4;
             // 
-            // aDMINPCDataSet5
-            // 
-            this.aDMINPCDataSet5.DataSetName = "ADMINPCDataSet5";
-            this.aDMINPCDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // reportIslasBindingSource
-            // 
-            this.reportIslasBindingSource.DataMember = "ReportIslas";
-            this.reportIslasBindingSource.DataSource = this.aDMINPCDataSet5;
-            // 
-            // reportIslasTableAdapter
-            // 
-            this.reportIslasTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -138,6 +124,20 @@
             this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             // 
+            // reportIslasBindingSource
+            // 
+            this.reportIslasBindingSource.DataMember = "ReportIslas";
+            this.reportIslasBindingSource.DataSource = this.aDMINPCDataSet5;
+            // 
+            // aDMINPCDataSet5
+            // 
+            this.aDMINPCDataSet5.DataSetName = "ADMINPCDataSet5";
+            this.aDMINPCDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // reportIslasTableAdapter
+            // 
+            this.reportIslasTableAdapter.ClearBeforeFill = true;
+            // 
             // ReporteIslas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,12 +149,14 @@
             this.Controls.Add(this.btnVolverMenuAdmin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReporteIslas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReporteIslas";
             this.Load += new System.EventHandler(this.ReporteIslas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportIslasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
