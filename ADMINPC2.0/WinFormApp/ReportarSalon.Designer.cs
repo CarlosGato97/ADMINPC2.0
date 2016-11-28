@@ -36,10 +36,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtHora = new System.Windows.Forms.TextBox();
-            this.txtTurno = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -107,13 +107,6 @@
             this.txtHora.Size = new System.Drawing.Size(100, 20);
             this.txtHora.TabIndex = 6;
             // 
-            // txtTurno
-            // 
-            this.txtTurno.Location = new System.Drawing.Point(380, 58);
-            this.txtTurno.Name = "txtTurno";
-            this.txtTurno.Size = new System.Drawing.Size(100, 20);
-            this.txtTurno.TabIndex = 7;
-            // 
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(18, 116);
@@ -142,6 +135,18 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Matutino",
+            "Nocturno"});
+            this.comboBox1.Location = new System.Drawing.Point(380, 57);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // ReportarSalon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,10 +154,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(674, 333);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtTurno);
             this.Controls.Add(this.txtHora);
             this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label5);
@@ -178,9 +183,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtHora;
-        private System.Windows.Forms.TextBox txtTurno;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

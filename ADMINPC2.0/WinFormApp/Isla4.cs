@@ -23,8 +23,8 @@ namespace WinFormApp
             SqlConnection conex = new SqlConnection("Data Source=IVANLOPEZ;Initial Catalog=ADMINPC;User ID=sa;Password=qewebatengo1");
             conex.Open();
 
-            string Id = txtID4.Text;
-            string NumIsla = txtNumIsla4.Text;
+            string Id = comboBoxID.Text;
+            string NumIsla = comboBox1.Text;
             string Fecha = txtFecha4.Text;
             string Hora = txtHora4.Text;
             string Descripcion = txtDescripcion4.Text;
@@ -35,8 +35,8 @@ namespace WinFormApp
             coman.ExecuteNonQuery();
 
             MessageBox.Show("Mensaje enviado correctamente");
-            txtID4.Text = "";
-            txtNumIsla4.Text = "";
+            comboBoxID.Text = "";
+            comboBox1.Text = "";
             txtFecha4.Text = "";
             txtHora4.Text = "";
             txtDescripcion4.Text = "";
@@ -50,6 +50,16 @@ namespace WinFormApp
             Menu Menu = new Menu();
             Menu.Show();
             this.Hide();
+        }
+
+        private void comboBoxID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxID.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         }
     }
 }

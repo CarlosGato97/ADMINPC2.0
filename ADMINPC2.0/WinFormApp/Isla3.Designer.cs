@@ -34,14 +34,14 @@
             this.txtDescripcion3 = new System.Windows.Forms.TextBox();
             this.txtHora3 = new System.Windows.Forms.TextBox();
             this.txtFecha3 = new System.Windows.Forms.TextBox();
-            this.txtNumIsla3 = new System.Windows.Forms.TextBox();
-            this.txtID3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxID = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnVolver3
@@ -74,32 +74,17 @@
             // 
             // txtHora3
             // 
-            this.txtHora3.Location = new System.Drawing.Point(512, 70);
+            this.txtHora3.Location = new System.Drawing.Point(530, 71);
             this.txtHora3.Name = "txtHora3";
             this.txtHora3.Size = new System.Drawing.Size(86, 20);
             this.txtHora3.TabIndex = 22;
             // 
             // txtFecha3
             // 
-            this.txtFecha3.Location = new System.Drawing.Point(370, 70);
+            this.txtFecha3.Location = new System.Drawing.Point(388, 71);
             this.txtFecha3.Name = "txtFecha3";
             this.txtFecha3.Size = new System.Drawing.Size(86, 20);
             this.txtFecha3.TabIndex = 21;
-            // 
-            // txtNumIsla3
-            // 
-            this.txtNumIsla3.Location = new System.Drawing.Point(241, 70);
-            this.txtNumIsla3.Name = "txtNumIsla3";
-            this.txtNumIsla3.Size = new System.Drawing.Size(49, 20);
-            this.txtNumIsla3.TabIndex = 20;
-            // 
-            // txtID3
-            // 
-            this.txtID3.Location = new System.Drawing.Point(56, 70);
-            this.txtID3.Name = "txtID3";
-            this.txtID3.Size = new System.Drawing.Size(86, 20);
-            this.txtID3.TabIndex = 19;
-            this.txtID3.TextChanged += new System.EventHandler(this.txtID3_TextChanged);
             // 
             // label6
             // 
@@ -115,7 +100,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(473, 77);
+            this.label5.Location = new System.Drawing.Point(491, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 13);
             this.label5.TabIndex = 17;
@@ -125,7 +110,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(324, 77);
+            this.label4.Location = new System.Drawing.Point(342, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 16;
@@ -162,6 +147,32 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Isla 3";
             // 
+            // comboBoxID
+            // 
+            this.comboBoxID.FormattingEnabled = true;
+            this.comboBoxID.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBoxID.Location = new System.Drawing.Point(56, 69);
+            this.comboBoxID.Name = "comboBoxID";
+            this.comboBoxID.Size = new System.Drawing.Size(85, 21);
+            this.comboBoxID.TabIndex = 26;
+            this.comboBoxID.SelectedIndexChanged += new System.EventHandler(this.comboBoxID_SelectedIndexChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "3"});
+            this.comboBox1.Location = new System.Drawing.Point(244, 70);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(85, 21);
+            this.comboBox1.TabIndex = 27;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Isla3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,13 +180,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(689, 309);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxID);
             this.Controls.Add(this.btnVolver3);
             this.Controls.Add(this.btnEnviar3);
             this.Controls.Add(this.txtDescripcion3);
             this.Controls.Add(this.txtHora3);
             this.Controls.Add(this.txtFecha3);
-            this.Controls.Add(this.txtNumIsla3);
-            this.Controls.Add(this.txtID3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -199,13 +210,13 @@
         private System.Windows.Forms.TextBox txtDescripcion3;
         private System.Windows.Forms.TextBox txtHora3;
         private System.Windows.Forms.TextBox txtFecha3;
-        private System.Windows.Forms.TextBox txtNumIsla3;
-        private System.Windows.Forms.TextBox txtID3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxID;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

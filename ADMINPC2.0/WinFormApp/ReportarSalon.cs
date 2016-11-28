@@ -25,7 +25,7 @@ namespace WinFormApp
 
             string Fecha = txtFecha.Text;
             string Hora = txtHora.Text;
-            string Turno = txtTurno.Text;
+            string Turno = comboBox1.Text;
             string DescripcionAula = txtDescripcion.Text;
 
             string cade = "insert into ReporteAula (Fecha, Hora, Turno, DescripcionAula) values ('" + Fecha + "','" + Hora + "','" + Turno + "','" + DescripcionAula + "')";
@@ -35,7 +35,7 @@ namespace WinFormApp
             MessageBox.Show("Reporte enviado correctamente");
             txtFecha.Text = "";
             txtHora.Text = "";
-            txtTurno.Text = "";
+            comboBox1.Text = "";
             txtDescripcion.Text = "";
 
 
@@ -47,6 +47,11 @@ namespace WinFormApp
             Menu Menu = new Menu();
             Menu.Show();
             this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         }
     }
 }
