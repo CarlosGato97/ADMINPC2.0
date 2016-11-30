@@ -72,5 +72,23 @@ namespace WinFormApp
             Programs.Show();
             this.Hide();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void reportarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Islas ist = new Islas();
+            ist.Show();
+            this.Hide();
+        
+        }
     }
 }

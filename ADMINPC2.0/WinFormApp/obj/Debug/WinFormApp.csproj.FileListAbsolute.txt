@@ -25,3 +25,8 @@ C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\bin\Debug\WinFormApp
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\bin\Debug\WinFormApp.application
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.exe.manifest
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.application
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.AltaIsla.resources
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.AltaReactivo.resources
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.Islas.resources
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\bin\Debug\itextsharp.dll
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.csproj.ResolveComReference.cache

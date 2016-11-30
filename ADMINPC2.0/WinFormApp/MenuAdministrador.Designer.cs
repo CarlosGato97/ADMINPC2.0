@@ -33,6 +33,8 @@
             this.linkIslas = new System.Windows.Forms.LinkLabel();
             this.linkLaboratorio = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +81,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(17, 171);
+            this.linkLabel1.Location = new System.Drawing.Point(16, 263);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(27, 13);
             this.linkLabel1.TabIndex = 3;
@@ -87,13 +89,43 @@
             this.linkLabel1.Text = "Salir";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel2.Location = new System.Drawing.Point(17, 181);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(182, 16);
+            this.linkLabel2.TabIndex = 4;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Dar de alta el Numero de Isla";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel3.Location = new System.Drawing.Point(17, 230);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(218, 16);
+            this.linkLabel3.TabIndex = 5;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Dar de alta el Numero del Reactivo";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
             // MenuAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(606, 214);
+            this.ClientSize = new System.Drawing.Size(667, 325);
+            this.Controls.Add(this.linkLabel3);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkLaboratorio);
             this.Controls.Add(this.linkIslas);
@@ -113,5 +145,7 @@
         private System.Windows.Forms.LinkLabel linkIslas;
         private System.Windows.Forms.LinkLabel linkLaboratorio;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }

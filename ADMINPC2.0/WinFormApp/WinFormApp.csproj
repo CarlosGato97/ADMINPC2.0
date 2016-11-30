@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\ivan\Desktop\ADMINPC\</PublishUrl>
+    <PublishUrl>C:\Users\ivan\Desktop\Instalador\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -60,6 +60,9 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\Documents\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -108,6 +111,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ADMINPCDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AltaIsla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaIsla.Designer.cs">
+      <DependentUpon>AltaIsla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaReactivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaReactivo.Designer.cs">
+      <DependentUpon>AltaReactivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Isla1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +152,12 @@
     </Compile>
     <Compile Include="Isla5.Designer.cs">
       <DependentUpon>Isla5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Islas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Islas.Designer.cs">
+      <DependentUpon>Islas.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -200,6 +221,12 @@
     <Compile Include="ReporteIslas.Designer.cs">
       <DependentUpon>ReporteIslas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AltaIsla.resx">
+      <DependentUpon>AltaIsla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaReactivo.resx">
+      <DependentUpon>AltaReactivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Isla1.resx">
       <DependentUpon>Isla1.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Isla5.resx">
       <DependentUpon>Isla5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Islas.resx">
+      <DependentUpon>Islas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -356,6 +386,17 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

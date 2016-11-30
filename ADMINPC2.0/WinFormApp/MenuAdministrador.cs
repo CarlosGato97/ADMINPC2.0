@@ -37,5 +37,19 @@ namespace WinFormApp
             aula.Show();
             this.Hide();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AltaIsla IslaAlta = new AltaIsla();
+            IslaAlta.Show();
+            this.Hide();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AltaReactivo AltaReac = new AltaReactivo();
+            AltaReac.Show();
+            this.Hide();
+        }
     }
 }

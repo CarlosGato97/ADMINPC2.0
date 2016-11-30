@@ -41,6 +41,7 @@
             this.reporteAulaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aDMINPCDataSet6 = new WinFormApp.ADMINPCDataSet6();
             this.reporteAulaTableAdapter = new WinFormApp.ADMINPCDataSet6TableAdapters.ReporteAulaTableAdapter();
+            this.btnExportar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reporteAulaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet6)).BeginInit();
@@ -130,6 +131,16 @@
             // 
             this.reporteAulaTableAdapter.ClearBeforeFill = true;
             // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(411, 306);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(75, 23);
+            this.btnExportar.TabIndex = 5;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
             // ReporteAula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,6 +148,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(619, 338);
+            this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.label2);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn turnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionAulaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnExportar;
     }
 }
