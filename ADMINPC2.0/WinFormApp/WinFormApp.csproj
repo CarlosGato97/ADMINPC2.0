@@ -123,6 +123,18 @@
     <Compile Include="AltaReactivo.Designer.cs">
       <DependentUpon>AltaReactivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="BorrarIsla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrarIsla.Designer.cs">
+      <DependentUpon>BorrarIsla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarReactivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrarReactivo.Designer.cs">
+      <DependentUpon>BorrarReactivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Isla1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +238,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaReactivo.resx">
       <DependentUpon>AltaReactivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrarIsla.resx">
+      <DependentUpon>BorrarIsla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrarReactivo.resx">
+      <DependentUpon>BorrarReactivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Isla1.resx">
       <DependentUpon>Isla1.cs</DependentUpon>

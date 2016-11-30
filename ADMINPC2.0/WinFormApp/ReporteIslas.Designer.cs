@@ -42,6 +42,7 @@
             this.reportIslasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aDMINPCDataSet5 = new WinFormApp.ADMINPCDataSet5();
             this.reportIslasTableAdapter = new WinFormApp.ADMINPCDataSet5TableAdapters.ReportIslasTableAdapter();
+            this.btnExportar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportIslasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDMINPCDataSet5)).BeginInit();
@@ -81,6 +82,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -138,6 +140,16 @@
             // 
             this.reportIslasTableAdapter.ClearBeforeFill = true;
             // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(423, 290);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(75, 23);
+            this.btnExportar.TabIndex = 5;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
             // ReporteIslas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,6 +157,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(628, 322);
+            this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnVolverMenuAdmin);
             this.Controls.Add(this.label2);
@@ -176,5 +189,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnExportar;
     }
 }

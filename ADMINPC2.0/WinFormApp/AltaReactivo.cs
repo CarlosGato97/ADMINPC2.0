@@ -47,5 +47,12 @@ namespace WinFormApp
             men.Show();
             this.Hide();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            BorrarReactivo del = new BorrarReactivo();
+            del.Show();
+            this.Hide();
+        }
     }
 }

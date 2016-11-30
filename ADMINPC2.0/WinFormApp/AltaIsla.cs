@@ -52,5 +52,12 @@ namespace WinFormApp
         {
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            BorrarIsla isl = new BorrarIsla();
+            isl.Show();
+            this.Hide();
+        }
     }
 }

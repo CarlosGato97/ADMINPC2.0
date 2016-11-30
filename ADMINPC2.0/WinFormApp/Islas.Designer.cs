@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Islas));
             this.ComboBoxId = new System.Windows.Forms.ComboBox();
             this.comboBoxIsla = new System.Windows.Forms.ComboBox();
             this.txtFecha = new System.Windows.Forms.TextBox();
@@ -49,6 +50,7 @@
             this.ComboBoxId.Name = "ComboBoxId";
             this.ComboBoxId.Size = new System.Drawing.Size(121, 21);
             this.ComboBoxId.TabIndex = 0;
+            this.ComboBoxId.SelectedIndexChanged += new System.EventHandler(this.ComboBoxId_SelectedIndexChanged);
             // 
             // comboBoxIsla
             // 
@@ -57,6 +59,7 @@
             this.comboBoxIsla.Name = "comboBoxIsla";
             this.comboBoxIsla.Size = new System.Drawing.Size(121, 21);
             this.comboBoxIsla.TabIndex = 1;
+            this.comboBoxIsla.SelectedIndexChanged += new System.EventHandler(this.comboBoxIsla_SelectedIndexChanged);
             // 
             // txtFecha
             // 
@@ -83,6 +86,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(12, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(19, 13);
@@ -92,6 +96,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(185, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 13);
@@ -101,6 +106,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(353, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
@@ -110,6 +116,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(500, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
@@ -119,6 +126,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(12, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 13);
@@ -149,6 +157,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(615, 447);
             this.Controls.Add(this.btnVolverMenu);
             this.Controls.Add(this.btnEnviar);
@@ -162,7 +172,9 @@
             this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.comboBoxIsla);
             this.Controls.Add(this.ComboBoxId);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Islas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Islas";
             this.Load += new System.EventHandler(this.Islas_Load);
             this.ResumeLayout(false);

@@ -30,3 +30,5 @@ C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.Islas.resources
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\bin\Debug\itextsharp.dll
 C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.csproj.ResolveComReference.cache
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.BorrarReactivo.resources
+C:\Users\ivan\Source\Repos\ADMINPC2.0\ADMINPC2.0\WinFormApp\obj\Debug\WinFormApp.BorrarIsla.resources

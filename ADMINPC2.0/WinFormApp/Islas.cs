@@ -108,6 +108,16 @@ namespace WinFormApp
 
             }
         }
+
+        private void ComboBoxId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBoxId.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void comboBoxIsla_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxIsla.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
     }
 
 }
